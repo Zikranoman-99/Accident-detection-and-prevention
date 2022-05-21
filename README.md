@@ -83,7 +83,11 @@ and also the accident severity of the area is detected through machine.
 ARDUINO:
 
 1 Open the code given in the arduino in your Arduino IDE
-2 Before compiling the program , make sure you include the Tiny-gps library
+
+2 Before compiling the program , make sure you include the Tiny-gps library.
+
 3 Compile the code
+
 4 Convert the code to it's HEX File
-4 Upload the HEX file in Arduino present in the proteus
+
+5 Upload the HEX file in Arduino present in the proteus
