@@ -1,4 +1,5 @@
 ABSTRACT:
+image.png
 
 This project is Accident Detection and Alerting System using 8051 Microcontroller can be used when an individual riding his/her vehicle, meets with an accident, there is a chance that the individual may suffer from a serious injury or expire instantaneously and there is no one around to help him. This system is a solution to the problem. The system acts as an accident identification system that gathers and sends the vehicle information that met with an accident, and conveys it to the nearest control room. For this the user vehicle is fixed and vibration sensor along with microcontroller with a GSM module and when a user vehicle meets with any accident, the vibration sensor detects and gives its output. This output is then detected by the microcontroller. The microcontroller sends this change detection signal to a GSM module. GSM Module sends send the location of the accident via a SMS. We can give anyone number, for example, ,police number, ambulance number, doctor number etc. The LCD present in the system would be used to display the status.
 
