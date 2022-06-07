@@ -33,7 +33,7 @@ Software Used:
 
 Since we are simulating in Proteus software, we are using Virtual Terminal inplace of GSM MODULE.
 
-WORKING OF BLOCK DIAGRAM: 
+                                            WORKING OF BLOCK DIAGRAM: 
 
 This block diagram is the basic mechanism of the project. The vibration sensor will
 provide the input required. Any vibration in the sensor will reflect a change in the
@@ -53,7 +53,7 @@ module. The GSM module would be used to send the message to a nearby control roo
 or is the user has provided a phone number, the message would be sent to the registered
 mobile.
 
-WORKING OF PROTEUS:
+                                            WORKING OF PROTEUS:
 
 a. When the circuit is switched on “INITIALISING” is displayed on the LCD Module for some
 time.
@@ -82,7 +82,7 @@ i. When a high logic is detected on the Arduino, the signal is given to the GPS 
 j. The GPS location (longitude, latitude, altitude and time) is displayed on the the serial monitor
 and also the accident severity of the area is detected through machine.
 
-ARDUINO:
+                                                ARDUINO:
 
 1 Open the code given in the arduino in your Arduino IDE
 
@@ -94,9 +94,10 @@ ARDUINO:
 
 5 Upload the HEX file in Arduino present in the proteus
 
-TINKERCAD:
+                                            TINKERCAD:
 
-                                FIRESENSOR+TEMPERATURE SENSOR:
+
+                                    FIRESENSOR+TEMPERATURE SENSOR:
  
 We are combining the temperature sensor and the smoke/gas sensor to indicate if there is any temperature rise or smoke release .The sensors are connected inside the car. Automobile engineers and experts say that short circuits in vehicles
 usually happens when the electrical wiring system is tampered to fit extra accessories. Sometimes due to overheating of the engine there might be some amount of smoke that could be released inside the car that can create panic to the passengers. If incase the smoke is extremely dangerous as in more than the given threshold value,90ppm then the buzzer will make noise which indicates the passengers to evacuate the vehicle.
@@ -106,7 +107,7 @@ inside the car.
 Tinkedcad model link: https://www.tinkercad.com/things/25hOVfaRbio-gas-and-temp-sensor/editel sharecode=ZbSeyWVhA4RyHJtEdC8O61f-MRetOuBVNf8nPilWJmQ
 
 
-                        OBSTACLE DETECTION+WATER LEVEL DETECTION:
+                                    OBSTACLE DETECTION+WATER LEVEL DETECTION:
 
 Water level detection: We are using ultrasonic sensor to detect the water level beneath the car so that we can take safety measures during natural calamities like floods. This sensor will be placed underneath the car and will majorly sense the amount of water present underneath the car and will store in the cloud. Once the water level increases to the danger level
 mentioned in the code that is more than 15cms the message stating ‘HIGH’ will be sent to the owner and the Buzzer will go on. This way the owner can try and move the car to a higher raised place or a different location. 
@@ -114,7 +115,7 @@ mentioned in the code that is more than 15cms the message stating ‘HIGH’ wil
 Obstacle detection: We are using ultrasonic sensor to detect obstacle outside the car to prevent any accidents. In this we will set the conditions for safety and danger so that the driver can acknowledge the situation. If any obstacle appears within the danger zone that is 15cms as mentioned in the code written by us, the car will take action on its own by applying the brakes
 and it buzzes to alert the driver. The application of brakes will go on automatically with out any human interference if we are encounter anything closer to 15cms. In this project, since we cant replicate a real braking system, we have represented the whole braking system with a motor as shown in the circuit diagram
 
-                                                    WORKING:
+                                                Working
 The circuit we made in TINKERCAD consist of ultrasonic sensor, Arduino microcontroller, buzzer and a motor. Ultrasonic sensors will sense the distance between obstacle and the vehicle. Our Arduino is programmed to activate buzzer if the distance between vehicle and obstacle is reduced below a certain threshold. If our sensor senses the object is too close to vehicle then it
 will control the motor to implement braking and slowing down of vehicle.
 
