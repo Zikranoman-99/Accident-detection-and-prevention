@@ -29,9 +29,11 @@ Software Used:
 
 • PROTEUS
 
+• TINKERCAD
+
 Since we are simulating in Proteus software, we are using Virtual Terminal inplace of GSM MODULE.
 
-WORKING OF BLOCK DIAGRAM:
+WORKING OF BLOCK DIAGRAM: 
 
 This block diagram is the basic mechanism of the project. The vibration sensor will
 provide the input required. Any vibration in the sensor will reflect a change in the
@@ -91,3 +93,36 @@ ARDUINO:
 4 Convert the code to it's HEX File
 
 5 Upload the HEX file in Arduino present in the proteus
+
+TINKERCAD:
+
+                                FIRESENSOR+TEMPERATURE SENSOR:
+ 
+We are combining the temperature sensor and the smoke/gas sensor to indicate if there is any temperature rise or smoke release .The sensors are connected inside the car. Automobile engineers and experts say that short circuits in vehicles
+usually happens when the electrical wiring system is tampered to fit extra accessories. Sometimes due to overheating of the engine there might be some amount of smoke that could be released inside the car that can create panic to the passengers. If incase the smoke is extremely dangerous as in more than the given threshold value,90ppm then the buzzer will make noise which indicates the passengers to evacuate the vehicle.
+TEMPERATURE SENSOR Indicates if there is any temperature change due to the presence of fire at a close proximity to the car and transmits newly recorded temperature to the cloud and checks if it is lesser than or greater than the threshold value mentioned in the code as and displays a signal to LCD display accordingly. Gas sensor: It senses if there is any gas released internally or anywhere near the car and buzzes when it senses any danger, that is around 90 ppm. The presence of this gas or smoke could be due to a fire present in and around the car or due to overheating of the car’s engine or due to short circuit of the wiring system
+inside the car.
+
+Tinkedcad model link: https://www.tinkercad.com/things/25hOVfaRbio-gas-and-temp-sensor/editel sharecode=ZbSeyWVhA4RyHJtEdC8O61f-MRetOuBVNf8nPilWJmQ
+
+
+                        OBSTACLE DETECTION+WATER LEVEL DETECTION:
+
+Water level detection: We are using ultrasonic sensor to detect the water level beneath the car so that we can take safety measures during natural calamities like floods. This sensor will be placed underneath the car and will majorly sense the amount of water present underneath the car and will store in the cloud. Once the water level increases to the danger level
+mentioned in the code that is more than 15cms the message stating ‘HIGH’ will be sent to the owner and the Buzzer will go on. This way the owner can try and move the car to a higher raised place or a different location. 
+
+Obstacle detection: We are using ultrasonic sensor to detect obstacle outside the car to prevent any accidents. In this we will set the conditions for safety and danger so that the driver can acknowledge the situation. If any obstacle appears within the danger zone that is 15cms as mentioned in the code written by us, the car will take action on its own by applying the brakes
+and it buzzes to alert the driver. The application of brakes will go on automatically with out any human interference if we are encounter anything closer to 15cms. In this project, since we cant replicate a real braking system, we have represented the whole braking system with a motor as shown in the circuit diagram
+
+                                                    WORKING:
+The circuit we made in TINKERCAD consist of ultrasonic sensor, Arduino microcontroller, buzzer and a motor. Ultrasonic sensors will sense the distance between obstacle and the vehicle. Our Arduino is programmed to activate buzzer if the distance between vehicle and obstacle is reduced below a certain threshold. If our sensor senses the object is too close to vehicle then it
+will control the motor to implement braking and slowing down of vehicle.
+
+If distance <=100cm and >=75cm: LED would turn ON to warn the driver
+
+If distance <=74cmand distance>=20cm: Buzzer would turn ON, LED would turn ON
+
+If distance <=19 and distance>=5: The motor would come to OFF state, buzzer and LED
+would be turned OFF
+
+Tinkedcad model link: https://www.tinkercad.com/things/3mWaCdfhtcC-tarp-project/editel?sharecode=v_H_o0TI43X3-z38PJtLS469D4THdzkrAB_E9fD-BAo
